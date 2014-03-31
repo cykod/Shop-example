@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+      <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+      <script src='robots.js'></script>
+      <script src='application.js'></script>
+      <script src="https://checkout.stripe.com/checkout.js"></script>
+      
+      <link href='style.css' rel='stylesheet'/>
+      <link href='done.css' rel='stylesheet'/>
+      <title>Evil Genius Robot Supply</title>
+  </head>
+  <body>
+    <header id='site-header'>
+     <h1>Evil Genius<br/>Robot Supply</h1>
+     <div id='cart'>
+       Cart Empty
+     </div>
+    </header>
+
+    <ul class='products'>
+
+      <li class='product' data-product-id='bird'>
+        <img src='images/bird_bot.png' alt='bird' />
+        <h2>Birdinator 4000 - $24.95</h2>
+      </li>
+
+      <li class='product' data-product-id='frog'>
+        <img src='images/froggy_bot.png' alt='frog' />
+        <h2>Froginator 7500 - $40.95</h2>
+      </li>
+
+      <li class='product' data-product-id='cat'>
+        <img src='images/kitty_bot.png' alt='cat' />
+        <h2>Kittybot - $80.95</h2>
+      </li>
+
+      <li class='product' data-product-id='peapod'>
+        <img src='images/peapod_alien_bots.png' alt='peapod' />
+        <h2>PeaPod Bot - $79.95</h2>
+      </li>
+
+      <li class='product' data-product-id='walter'>
+        <img src='images/waving_walter.png' alt='walter' />
+        <h2>Waving Walter - $90.95</h2>
+      </li>
+
+      <li class='product' data-product-id='windup'>
+        <img src='images/windup_gray_bot.png' alt='windup' />
+        <h2>Windup bot - $120.95</h2>
+      </li>
+
+    </ul>
+    <div class='clear'></div>
+
+    <div class='overlay'></div>
+    <div class='details'>
+      <h2 id='detail-title'>My Product Title</h2>
+      <img id='detail-image' src='images/peapod_alien_bots.png' alt='peapod'/>
+      <p id='detail-description'>
+        Curabitur urna tellus, aliquam vitae, ultrices eget, vehicula nec, diam.
+          blandit venenatis, arcu dolor molestie dolor, vitae congue orci risus a.
+      </p>
+      <div class='clear'></div>
+      <div id='detail-price'>
+        $24.94
+      </div>
+      <div id='detail-options'>
+        Quantity: 
+        <select id='detail-quantity'>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+        </select>
+
+        <button id='add-to-cart'>Add To Cart</button>
+      </div>
+    </div>
+
+    <div id='cart-details'>
+      <div id="cart-content">
+
+      </div>
+
+      <button id="checkout">Check Out</button>
+    </div>
+
+  </body>
+</html>

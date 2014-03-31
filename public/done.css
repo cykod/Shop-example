@@ -1,0 +1,10 @@
+
+.overlay { display:none; }
+
+
+.details { display:none; }
+
+ .name { width:60%; float:left; }
+  .price { width:20%; float:left; text-align:right; }
+  .subtotal { width:20%; float:left; text-align:right; }
+
